@@ -1,0 +1,260 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	padding-top: 73px;
+	font-family: 'Merriweather', Serif;
+	line-height: 1.6;
+	color: #000;
+	background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Top Navigation ---- */
+
+nav {
+	background-color: #2d3945;
+	position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.nav-title {
+	margin: 20px 0;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+    font-size: 1.3em;
+	letter-spacing: 2px;
+}
+
+/* ---- Headers and Titles ---- */
+
+h2 {
+	font-size: 1.25em;
+    color: #2d3945;
+}
+
+h3 {
+	font-size: 1em;
+    color: #b5b5b5;
+    font-weight: 100;
+    padding-bottom: 23px;
+    border-bottom: 5px solid #2d3945;
+    position: relative;
+    min-height: 80px;
+}
+
+h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #2d3945;
+    height: 2px;
+    top: 81px;
+}
+
+.form-titles {
+	text-align: left;
+}
+
+.double-underline {
+    position: relative;
+}
+
+.double-underline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #2d3945;
+    height: 2px;
+    top: -14px;
+}
+
+/* ---- Forms & Form Elements ---- */
+
+legend {
+    font-size: 1.25em;
+    color: #2d3945;
+    font-weight: bold;
+}
+
+label,
+.inputs {
+	display: block;
+}
+
+.newsletter-options {
+    display: block;
+}
+
+.newsletter-options * {
+    display: inline;
+}
+
+.inputs:focus {
+	border: 2px solid #46698b;
+	outline: none;
+}
+
+.labels {
+	color: rgba(45, 57, 69, 0.55);
+	padding: 10px 0;
+}
+
+.inputs {
+	background-color: #eff0f1;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.inputs {
+    -webkit-transition: border 0.5s ease-in;
+       -moz-transition: border 0.5s ease-in;
+         -o-transition: border 0.5s ease-in;
+            transition: border 0.5s ease-in;
+}
+
+#fullname,
+#email,
+#zip {
+    -webkit-transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
+       -moz-transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
+         -o-transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
+            transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
+}
+
+#fullname:valid, 
+#email:valid,
+#zip:valid {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px 10px;
+    padding-left: 40px;
+    border: 2px solid #00b51c;
+    background-color: rgba(0, 189, 152, 0.06);
+}
+
+#fullname:focus:invalid, 
+#email:focus:invalid,
+#zip:focus:invalid {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.06);
+}
+
+.validation-text {
+    font-size: .9em;
+    color: rgba(255, 0, 0, 0.77);
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-in;
+    margin: 0px 0px 30px 0;
+}
+
+#zip:focus:invalid ~ .validation-text {
+    max-height: 100px;
+}
+
+/*input[id*="zip"] {
+    margin-bottom: 75px;
+}
+*/
+input::-webkit-input-placeholder {
+  text-align: right;
+}
+
+textarea {
+	height: 125px;
+}
+
+textarea::placeholder {
+    text-align: left;
+}
+
+.sign-up-button {
+    margin: 13px 0;
+	width: 100%;
+    padding: 13px;
+    background: #4ebbb5;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.copyright {
+	text-align: center;
+    color: rgba(157, 163, 168, 0.71);
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    /* ---- General Layout Styles---- */
+
+    .container {
+        width: 60%;
+        /*margin: 0 auto;*/
+    }
+
+    /* ---- Labels & Inputs ---- */
+
+    .labels {
+        padding: 17px 0;
+        display: inline-block;
+        width: 28%;
+    }
+
+    .inputs {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .double-underline {
+        width: 100%;
+    }
+/*
+    input([type="textarea"]) {
+        display: block;
+        width: 100%;
+    }*/
+
+    .textarea-styles {
+        display: block; 
+        width: 100%;
+    }
+}
