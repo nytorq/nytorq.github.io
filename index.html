@@ -21,26 +21,25 @@
 		
 		<form>
 			<fieldset>
-
 				<legend>Contact Information</legend>
 
 				<label for="fullname" class="labels">Full Name</label>
-				<input type="text" id="fullname" placeholder="Required" class="inputs" required>
+				<input type="text" id="fullname" name="user_fullname" placeholder="Required" class="inputs" required>
 
 				<label for="email" class="labels">Email Address</label>
-				<input type="email" id="email" placeholder="Required" class="inputs" required>
+				<input type="email" id="email" name="user_email" placeholder="Required" class="inputs" required>
 
 				<label for="phone" class="labels">Phone Number</label>
-				<input type="tel" id="phone" class="inputs"/>
+				<input type="tel" id="phone" name="user_phone" class="inputs" placeholder="Gimme dem digits."/>
 
 				<label for="address" class="labels">Street Address</label>
-				<input type="text" id="address" class="inputs"/>
+				<input type="text" id="address" name="user_street_address" class="inputs"/>
 
 				<label for="city" class="labels">City</label>
-				<input type="text" id="city" class="inputs"/>
+				<input type="text" id="city" name="user_city" class="inputs"/>
 
 				<label for="state" class="labels">State</label>
-				<select id="state" class="inputs">
+				<select id="state" name="user_state" class="inputs">
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
@@ -96,46 +95,49 @@
 
 			
 				<label for="zip" class="labels">Zip Code</label>
-				<input type="text" id="zip" class="inputs" pattern="\b\d{5}\b" required/>
+				<input type="text" id="zip" name="user_zip" class="inputs" pattern="\b\d{5}\b" required/>
 				<div class="validation-text"> 5 digits &#40;no letters&#41;&#44; please.</div><!--/.validation-text-->
 			</fieldset>
 
+			<hr>
+
 			<fieldset>
-				<legend class="double-underline">Newsletter</legend>
+				
+				<legend>Newsletter</legend>
 
 				<p>Select the newsletters you would like to receive:</p>
 
 				<div class="newsletter-options">
-					<input type="checkbox" id="htmlnews" checked/>
+					<input type="checkbox" id="htmlnews" name="user_htmlnews_selection"/>
 					<label for="htmlnews" class="labels">HTML News</label>
 				</div><!--/.newsletter-options-->
 				
 				<div class="newsletter-options">
-					<input type="checkbox" id="cssnews"/>
+					<input type="checkbox" id="cssnews" name="user_cssnews_selection"/>
 					<label for="cssnews" class="labels">CSS News</label>
 				</div><!--/.newsletter-options-->
 
 				<div class="newsletter-options">
-					<input type="checkbox" id="jsnews"/>
+					<input type="checkbox" id="jsnews" name="user_jsnews_selection"/>
 					<label for="jsnews" class="labels">Javascript News</label>
 				</div><!--/.newsletter-options-->
 
 				<p>Newsletter Format:</p>
 
 				<div class="newsletter-options">
-					<input type="radio" name="newsletter-options" id="html" checked/>
+					<input type="radio" id="html" name="user_newsletter_format_html"/>
 					<label for="html" class="labels">HTML</label>
 				</div><!--/.newsletter-options-->
 
 				<div class="newsletter-options">
-					<input type="radio" name="newsletter-options" id="plaintext"/>
+					<input type="radio" id="plaintext" name="user_newsletter_format_plaintext"/>
 					<label for="plaintext" class="labels">Plain Text</label>
 				</div><!--/.newsletter-options-->
 
 				<label for="othertopics" class="labels textarea-styles">Other topics you'd like to hear about:</label>
-				<textarea class="inputs textarea-styles" id="othertopics" placeholder="Other than cats or coffee"></textarea>
+				<textarea class="inputs textarea-styles" id="othertopics" placeholder="Other than cats or coffee" name="user_topics"></textarea>
 
-				<button type="submit" name="signup" class="sign-up-button">Sign Up</button> 
+				<button type="submit" name="user_signup" class="sign-up-button">Sign Up</button> 
 			</fieldset>
 			<p class="copyright">Copyright The Code Review</p>
 		</form>

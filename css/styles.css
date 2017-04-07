@@ -89,16 +89,6 @@ h3:after {
     position: relative;
 }
 
-.double-underline::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    background: #2d3945;
-    height: 2px;
-    top: -14px;
-}
-
 /* ---- Forms & Form Elements ---- */
 
 legend {
@@ -126,7 +116,7 @@ label,
 }
 
 .labels {
-	color: rgba(45, 57, 69, 0.55);
+	color: rgba(45, 57, 69, 0.335);
 	padding: 10px 0;
 }
 
@@ -137,22 +127,23 @@ label,
     padding: 10px;
     width: 100%;
     margin-bottom: 13px;
+    border: 2px solid transparent;
 }
 
 .inputs {
-    -webkit-transition: border 0.5s ease-in;
-       -moz-transition: border 0.5s ease-in;
-         -o-transition: border 0.5s ease-in;
-            transition: border 0.5s ease-in;
+    -webkit-transition: border 0.33s ease-in;
+       -moz-transition: border 0.33s ease-in;
+         -o-transition: border 0.33s ease-in;
+            transition: border 0.33s ease-in;
 }
 
 #fullname,
 #email,
 #zip {
-    -webkit-transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
-       -moz-transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
-         -o-transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
-            transition: background-color 0.5s, border 0.5s, background 0.5s ease-in;
+    -webkit-transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
+       -moz-transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
+         -o-transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
+            transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
 }
 
 #fullname:valid, 
@@ -187,10 +178,6 @@ label,
     max-height: 100px;
 }
 
-/*input[id*="zip"] {
-    margin-bottom: 75px;
-}
-*/
 input::-webkit-input-placeholder {
   text-align: right;
 }
@@ -213,9 +200,26 @@ textarea::placeholder {
     color: #fff;
 }
 
+.sign-up-button:hover {
+    background: #2d3945;
+}
+
+.sign-up-button {
+    -webkit-transition: background 0.25s ease-in;
+       -moz-transition: background 0.25s ease-in;
+         -o-transition: background 0.25s ease-in;
+            transition: background 0.25s ease-in;
+}
+
 .copyright {
 	text-align: center;
     color: rgba(157, 163, 168, 0.71);
+}
+
+hr {
+    background: #2d3945;
+    height: 2px;
+    margin-bottom: 2.7em;
 }
 
 /* ================================= 
@@ -247,11 +251,6 @@ textarea::placeholder {
     .double-underline {
         width: 100%;
     }
-/*
-    input([type="textarea"]) {
-        display: block;
-        width: 100%;
-    }*/
 
     .textarea-styles {
         display: block; 
