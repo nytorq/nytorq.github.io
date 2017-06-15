@@ -1,147 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Code Review Newsletter | Get the latest on how your code is doing right in your inbox</title>
-	<meta name="author" content="Charlie Prator">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	<nav>
-		<div class="container">
-			<p class="nav-title">The Code Review</p>
-		</div><!--/.container-->
-	</nav>
-	<div class="container">
-		<h2>Sign up for our Newsetter</h2>
-		
-		<h3>Get the latest news on how your code is doing right in your inbox</h3>
-		
-		<form>
-			<fieldset>
-				<legend>Contact Information</legend>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie's Interactive Photo Gallery</title>
+    <meta name="author" content="Charlie Prator">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Charlie's Interative Photo Gallery</h1>
+      <input type="text" class="search_input" placeholder="What are you looking for?"/>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\01.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields." title="Hay Bales" class="photo"/>
+        </picture>
 
-				<label for="fullname" class="labels">Full Name</label>
-				<input type="text" id="fullname" name="user_fullname" placeholder="Required" class="inputs" required>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\02.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from here." title="Lake" class="photo"/>
+        </picture>
 
-				<label for="email" class="labels">Email Address</label>
-				<input type="email" id="email" name="user_email" placeholder="Required" class="inputs" required>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\03.jpg" alt="I hiked to the top of the mountain and got this picture of the canyon and trees below." title="Canyon" class="photo"/>
+        </picture>
 
-				<label for="phone" class="labels">Phone Number</label>
-				<input type="tel" id="phone" name="user_phone" class="inputs" placeholder="Gimme dem digits."/>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\04.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." title="Iceberg" class="photo"/>
+        </picture>
 
-				<label for="address" class="labels">Street Address</label>
-				<input type="text" id="address" name="user_street_address" class="inputs"/>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\05.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." title="Desert" class="photo"/>
+        </picture>
 
-				<label for="city" class="labels">City</label>
-				<input type="text" id="city" name="user_city" class="inputs"/>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\06.jpg" alt="Fall is coming, I love when the leaves on the trees start to change color." title="Fall" class="photo"/>
+        </picture>
 
-				<label for="state" class="labels">State</label>
-				<select id="state" name="user_state" class="inputs">
-					<option value="AL"selected hidden disabled>Choose State</option>
-					<option value="AL">Alabama</option>
-					<option value="AK">Alaska</option>
-					<option value="AZ">Arizona</option>
-					<option value="AR">Arkansas</option>
-					<option value="CA">California</option>
-					<option value="CO">Colorado</option>
-					<option value="CT">Connecticut</option>
-					<option value="DE">Delaware</option>
-					<option value="DC">District Of Columbia</option>
-					<option value="FL">Florida</option>
-					<option value="GA">Georgia</option>
-					<option value="HI">Hawaii</option>
-					<option value="ID">Idaho</option>
-					<option value="IL">Illinois</option>
-					<option value="IN">Indiana</option>
-					<option value="IA">Iowa</option>
-					<option value="KS">Kansas</option>
-					<option value="KY">Kentucky</option>
-					<option value="LA">Louisiana</option>
-					<option value="ME">Maine</option>
-					<option value="MD">Maryland</option>
-					<option value="MA">Massachusetts</option>
-					<option value="MI">Michigan</option>
-					<option value="MN">Minnesota</option>
-					<option value="MS">Mississippi</option>
-					<option value="MO">Missouri</option>
-					<option value="MT">Montana</option>
-					<option value="NE">Nebraska</option>
-					<option value="NV">Nevada</option>
-					<option value="NH">New Hampshire</option>
-					<option value="NJ">New Jersey</option>
-					<option value="NM">New Mexico</option>
-					<option value="NY">New York</option>
-					<option value="NC">North Carolina</option>
-					<option value="ND">North Dakota</option>
-					<option value="OH">Ohio</option>
-					<option value="OK">Oklahoma</option>
-					<option value="OR">Oregon</option>
-					<option value="PA">Pennsylvania</option>
-					<option value="RI">Rhode Island</option>
-					<option value="SC">South Carolina</option>
-					<option value="SD">South Dakota</option>
-					<option value="TN">Tennessee</option>
-					<option value="TX">Texas</option>
-					<option value="UT">Utah</option>
-					<option value="VT">Vermont</option>
-					<option value="VA">Virginia</option>
-					<option value="WA">Washington</option>
-					<option value="WV">West Virginia</option>
-					<option value="WI">Wisconsin</option>
-					<option value="WY">Wyoming</option>
-				</select>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\07.jpg" alt="I drove past this plantation yesterday, everything is so green!" title="Plantation" class="photo"/>
+        </picture>
 
-			
-				<label for="zip" class="labels">Zip Code</label>
-				<input type="text" id="zip" name="user_zip" class="inputs" pattern="\b\d{5}\b" required/>
-				<div class="validation-text"> 5 digits &#40;no letters&#41;&#44; please.</div><!--/.validation-text-->
-			</fieldset>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\08.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!" title="Dunes" class="photo"/>
+        </picture>
 
-			<hr>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\09.jpg" alt="We enjoyed a quiet stroll down this countryside lane." title="Countryside Lane" class="photo"/>
+        </picture>
 
-			<fieldset>
-				
-				<legend>Newsletter</legend>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of orange." title="Sunset" class="photo"/>
+        </picture>
 
-				<p>Select the newsletters you would like to receive:</p>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\11.jpg" alt="I did a tour of a cave today and the view of the landscape below was breathtaking." title="Cave" class="photo"/>
+        </picture>
 
-				<div class="newsletter-options">
-					<input type="checkbox" id="htmlnews" name="user_htmlnews_selection"/>
-					<label for="htmlnews" class="labels">HTML News</label>
-				</div><!--/.newsletter-options-->
-				
-				<div class="newsletter-options">
-					<input type="checkbox" id="cssnews" name="user_cssnews_selection"/>
-					<label for="cssnews" class="labels">CSS News</label>
-				</div><!--/.newsletter-options-->
-
-				<div class="newsletter-options">
-					<input type="checkbox" id="jsnews" name="user_jsnews_selection"/>
-					<label for="jsnews" class="labels">Javascript News</label>
-				</div><!--/.newsletter-options-->
-
-				<p>Newsletter Format:</p>
-
-				<div class="newsletter-options">
-					<input type="radio" id="html" name="user_newsletter_format"/>
-					<label for="html" class="labels">HTML</label>
-				</div><!--/.newsletter-options-->
-
-				<div class="newsletter-options">
-					<input type="radio" id="plaintext" name="user_newsletter_format"/>
-					<label for="plaintext" class="labels">Plain Text</label>
-				</div><!--/.newsletter-options-->
-
-				<label for="othertopics" class="labels textarea-styles">Other topics you'd like to hear about:</label>
-				<textarea class="inputs textarea-styles" id="othertopics" placeholder="Other than cats or coffee" name="user_topics"></textarea>
-
-				<button type="submit" name="user_signup" class="sign-up-button">Sign Up</button> 
-			</fieldset>
-			<p class="copyright">Copyright The Code Review</p>
-		</form>
-	</div><!--/.container-->
-</body>
+        <picture class="photo">
+          <img src="photo_gallery_v3\photos\12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." title="Bluebells" class="photo"/>
+        </picture>
+    </div><!-- /.container -->
+    <footer>
+      <a href="#" class="back_to_top"><p>Back to Top<i class="material-icons">arrow_upward</i></p></a>
+    </footer>
+  </body>
 </html>
