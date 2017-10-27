@@ -5,80 +5,83 @@
     <meta name="author" content="Charlie Prator">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css\jquery-rebox.css">
     <link rel="stylesheet" href="css\normalize.css">
     <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\jquery-rebox.css">
   </head>
   <body>
     <div class="container">
       <h1>Charlie's Interactive Photo Gallery</h1>
       <input type="text" id="search_input" placeholder="What are you looking for?" onkeyup="search()"/>
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\01.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\01.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields." title="Hay Bales" class="image"/>
-        </picture>
+        <div class="photoGallery">
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\01.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\01.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields." title="Hay Bales" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\02.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\02.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from here." title="Lake" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\02.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\02.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from here." title="Lake" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\03.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\03.jpg" alt="I hiked to the top of the mountain and got this picture of the canyon and trees below." title="Canyon" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\03.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\03.jpg" alt="I hiked to the top of the mountain and got this picture of the canyon and trees below." title="Canyon" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\04.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\04.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." title="Iceberg" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\04.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\04.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." title="Iceberg" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\05.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\05.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." title="Desert" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\05.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\05.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." title="Desert" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\06.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\06.jpg" alt="Fall is coming, I love when the leaves on the trees start to change color." title="Fall" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\06.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\06.jpg" alt="Fall is coming, I love when the leaves on the trees start to change color." title="Fall" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\07.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\07.jpg" alt="I drove past this plantation yesterday, everything is so green!" title="Plantation" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\07.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\07.jpg" alt="I drove past this plantation yesterday, everything is so green!" title="Plantation" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\08.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\08.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!" title="Dunes" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\08.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\08.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!" title="Dunes" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\09.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\09.jpg" alt="We enjoyed a quiet stroll down this countryside lane." title="Countryside Lane" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\09.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\09.jpg" alt="We enjoyed a quiet stroll down this countryside lane." title="Countryside Lane" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\10.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of orange." title="Sunset" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\10.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of orange." title="Sunset" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\11.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\11.jpg" alt="I did a tour of a cave today and the view of the landscape below was breathtaking." title="Cave" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\11.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\11.jpg" alt="I did a tour of a cave today and the view of the landscape below was breathtaking." title="Cave" class="image"/>
+          </picture>
 
-        <picture class="photo">
-          <source srcset="photo_gallery_v3\photos\thumbnails\12.jpg" media="(max-width: 768px)">
-          <img src="photo_gallery_v3\photos\12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." title="Bluebells" class="image"/>
-        </picture>
+          <picture class="photo">
+            <source srcset="photo_gallery_v3\photos\thumbnails\12.jpg" media="(max-width: 768px)">
+            <img src="photo_gallery_v3\photos\12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." title="Bluebells" class="image"/>
+          </picture>
+        </div><!--/.photoGallery-->
     </div><!-- /.container -->
     <footer>
       <a href="#" class="back_to_top">Back to Top<i class="material-icons">arrow_upward</i></a>
     </footer>
     <script src="scripts/search.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="scripts/jquery-rebox.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="scripts/jquery-rebox - v2.js"></script>
     <script src="scripts/rebox.js"></script>
   </body>
 </html>

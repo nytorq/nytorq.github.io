@@ -12,8 +12,6 @@ const search = () => {
   }
 }
 
-
-
 /*
 Create a variable for input.
 Then
