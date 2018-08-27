@@ -1,0 +1,39 @@
+// ==========================================================================
+// Typographical Styles
+// ==========================================================================
+
+.headline {
+  @include m(primary) {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    padding-left: 0.5em;
+    font-weight: $font-weight--ultra-bold;
+    color: $color-secondary;
+  }
+  @include m(secondary) {
+    font-size: 1.25em;
+    color: $gray;
+    padding: 1em 0;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+.link {
+  font-weight: $font-weight--ultra-bold;
+  color: $color-secondary;
+  text-decoration: none;
+  &:hover{
+    color: darken($color-secondary, 20%)
+  }
+}
+
+.blockquote {
+  border-left: 12px $color-secondary solid;
+  padding-left: 1em;
+  border-radius: 0.3em;
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.25em;
+  color: $gray;
+}

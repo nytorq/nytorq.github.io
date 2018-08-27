@@ -1,0 +1,49 @@
+// ==========================================================================
+// Grid Styles
+// ==========================================================================
+
+.grid__row {
+  @media (min-width: $break-t) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+// Grid creator
+@for $i from 1 through 12 {
+  .grid__col--#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+.theme__colors {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+$theme-color-map: (
+  '12': $color-secondary,
+  '6' : $color-accent,
+  '4' : $color-primary,
+  '3' : $color-info,
+  '5' : $color-success,
+  '7' : $color-negative,
+  '8' : $color-warning
+);
+
+// looping through each combo of .grid__col--# and .theme__colors to apply a background-color
+@each $col-value, $themecolor in $theme-color-map {
+  .grid__col--#{$col-value}.theme__colors {
+    background-color: $themecolor;
+  }
+}
+
+.grid__col--6.theme__colors {
+  color: $white;
+}

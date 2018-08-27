@@ -1,0 +1,21 @@
+// ==========================================================================
+// Navigation Styles
+// ==========================================================================
+
+.nav {
+  @include e(item) {
+    @extend %nav-item;
+    & > a {
+      color: $gray;
+      text-decoration: none;
+    }
+    @include m(active) {
+      @extend %nav-item;
+      background-color: $color-secondary;
+      & > a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}
