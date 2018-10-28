@@ -5,51 +5,17 @@
 // General Placeholders
 
 %centered {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   width: 100%;
   max-width: $max-width;
+  flex-grow: inherit;
 }
 
-// %grid {
-//   width: 100%;
-//   padding: 2em 1em;
-//   margin: 1em auto;
-// }
+%container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
 
 // UI Element Specific Placeholders
-
-%btn {
-  border: none;
-  border-radius: 0.3em;
-  padding: 0.9em 0;
-  color: $white;
-  text-transform: uppercase;
-  font-weight: $font-weight--bold;
-  width: 100%;
-  margin: 1em 0;
-  max-width: 12em;
-}
-
-%input {
-  border-bottom: 8px $color-secondary solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 100%;
-  max-width: -webkit-fill-available;
-  padding: 1em 0.5em;
-  margin: 1em 0;
-  &:hover {
-    border-bottom: 8px lighten($color-secondary, 10%) solid;
-  }
-}
-
-%nav-item {
-  padding: 1em 0;
-  border-radius: 0.5em;
-  text-decoration: none;
-  @media (min-width: $break-t) {
-    padding: 1em;
-  }
-}

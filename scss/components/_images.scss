@@ -1,32 +1,3 @@
 // ==========================================================================
 // Image Styles
 // ==========================================================================
-
-.img {
-  @include m(logo) {
-    @extend %centered;
-    width: 12em;
-    display: block;
-    margin-top: 3em;
-    margin-bottom: 4em;
-    @media (min-width: $break-t) {
-      margin: 1em;
-      width: 8em;
-    }
-  }
-  @include m(avatar) {
-    @extend %centered;
-    width: 12em;
-    display: block;
-    margin: 2em auto;
-    border: 1em solid transparent;
-  }
-  @include m(frame) {
-    @extend %centered;
-    display: block;
-    width: 90%;
-    border: 1em solid $white;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.17);
-    margin: 2em auto;
-  }
-}

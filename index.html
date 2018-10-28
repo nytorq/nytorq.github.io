@@ -1,174 +1,56 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Circles UI Kit</title>
+  <title>Treehouse Lecture #1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
+
+  <link href="css/mediaelementplayer.css" rel="stylesheet">
   <link rel="stylesheet" href="css/application.css">
 </head>
-<!--
-    List of classes used
 
-    Grid:
-    .container
-    .grid__row
-    .grid__col--2
-    .grid__col--3
-    .grid__col--4
-    .grid__col--5
-    .grid__col--6
-    .grid__col--7
-    .grid__col--8
-    .grid__col--9
-    .grid__col--10
-    .grid__col--11
-    .grid__col--12
-    .centered
-    .theme__colors
-
-    Typography:
-    .container
-    .link
-    .blockquote
-    .headline--primary
-    .headline--secondary
-
-    Image:
-    .img--logo
-    .img--frame
-    .img--avatar
-
-    Navigation:
-    .nav__item
-
-    Buttons:
-    .btn--default
-    .btn--success
-    .btn--error
-    .btn--warning
-    .btn--info
-    .theme__colors
-
-    Forms:
-    .form
-    .form__label--hidden
-    .form__input
-
-  -->
-
-<body class="container">
-  <div class="grid__row">
-    <div class="grid__col--3">
-      <a class="link" href="/">
-          <img class="img--logo" alt="circles logo" src="images/logo.png">
-        </a>
-    </div>
-    <div class="grid__col--9">
-      <nav role="navigation">
-        <ul class="nav">
-          <li class="nav__item--active"><a href="#type">Typography</a></li>
-          <li class="nav__item"><a href="#buttons">Buttons</a></li>
-          <li class="nav__item"><a href="#forms">Form</a></li>
-          <li class="nav__item"><a href="#images">Images</a></li>
-          <li class="nav__item"><a href="#grid">Grid</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <div class="grid__row">
-    <div class="grid__col--12">
-      <div class="card">
-        <p>This is what the navigation menu looks like when the screen is at 769px or higher. When the screen is less than 769px,
-          the menu will be displayed vertically.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid__row">
-    <div class="grid__col--8">
-      <div class="card">
-        <h4 id="type" class="headline--secondary">Typography</h4>
-        <h1 class="headline--primary">Take a look at this amazing headline</h1>
-        <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look like</a>. The
-          typical font family for this kit is Open Sans. This kit is intended for clean and refreshing web layouts.
-          No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes
-          fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using italics as well from time to time</em>.
-          Fell free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but this
-          amazing paragraph as well. :)</p>
-        <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes. That's right, block quotes that say, "Hey,
-          I'm an article you want to read and nurture."</blockquote>
-      </div>
-    </div>
-    <div class="grid__col--4">
-      <form class="form">
-        <legend id="forms" class="headline--secondary">Form Elements</legend>
-        <img class="img--avatar" src="images/avatar.png" alt="Avatar">
-        <label class="form__label--hidden" for="username">Username:</label>
-        <input class="form__input" type="text" id="username" placeholder="Username">
-        <label class="form__label--hidden" for="password">Password:</label>
-        <input class="form__input" type="password" id="password" placeholder="Password">
-        <button class="btn--default theme__colors" type="submit" value="Login">Login</button>
-      </form>
-    </div>
-  </div>
-
-  <h4 id="images" class="headline--secondary">Images</h4>
-
-  <div class="grid__row">
-    <div class="grid__col--6">
-      <img class="img--frame" src="images/image.png" alt="sample image">
-    </div>
-    <div class="grid__col--6">
-      <img class="img--avatar" src="images/avatar.png" alt="Avatar">
-    </div>
-  </div>
-
-  <h4 id="buttons" class="headline--secondary">Buttons</h4>
-
-  <div class="grid__row">
-    <div class="grid__col--12">
-      <button class="btn--default theme__colors">default</button>
-      <button class="btn--success theme__colors">success</button>
-      <button class="btn--error theme__colors">error</button>
-      <button class="btn--warning theme__colors">warning</button>
-      <button class="btn--info theme__colors">info</button>
-    </div>
-  </div>
-
-  <h4 id="grid" class="headline--secondary">Grid System</h4>
-
-  <div class="grid__row">
-    <div class="grid__col--12 theme__colors">.grid__col--12</div>
-  </div>
-  <div class="grid__row">
-    <div class="grid__col--6 theme__colors">.grid__col--6</div>
-    <div class="grid__col--6 theme__colors">.grid__col--6</div>
-  </div>
-  <div class="grid__row">
-    <div class="grid__col--4 theme__colors">.grid__col--4</div>
-    <div class="grid__col--4 theme__colors">.grid__col--4</div>
-    <div class="grid__col--4 theme__colors">.grid__col--4</div>
-  </div>
-  <div class="grid__row">
-    <div class="grid__col--3 theme__colors">.grid__col--3</div>
-    <div class="grid__col--3 theme__colors">.grid__col--3</div>
-    <div class="grid__col--3 theme__colors">.grid__col--3</div>
-    <div class="grid__col--3 theme__colors">.grid__col--3</div>
-  </div>
-  <div class="grid__row">
-    <div class="grid__col--5 theme__colors">.grid__col--5</div>
-    <div class="grid__col--7 theme__colors">.grid__col--7</div>
-  </div>
-  <div class="grid__row">
-    <div class="grid__col--8 theme__colors">.grid__col--8</div>
-    <div class="grid__col--4 theme__colors">.grid__col--4</div>
-  </div>
-  <div class="grid__row">
-    <div class="grid__col--7 theme__colors centered">.centered .grid__col--7</div>
-  </div>
-
+<body>
+  <div class="container__video">
+    <video class="video" controls muted>
+      <source src="video/video.mp4" type="video/mp4">
+      <source src="video/video.ogg" type="video/ogg">
+        <track label="English Captions" kind="subtitles" srclang="en" src="video/english-captions.vtt" crossorigin="" default/>
+    </video>
+  </div> <!--/.container__video-->
+  <div class="container">
+  <p>
+    <span class="captions" data-start="0.240" data-end="4.130">Now that we've looked at the architecture of the internet, let's see how you might</span>
+    <span class="captions" data-start="4.130" data-end="7.535">connect your personal devices to the internet inside your house. </span>
+    <span class="captions" data-start="7.535" data-end="11.270">Well there are many ways to connect to the internet, and </span>
+    <span class="captions" data-start="11.270" data-end="13.960">most often people connect wirelessly.</span>
+  </p>
+  <p>
+    <span class="captions" data-start="13.960" data-end="17.940">Let's look at an example of how you can connect to the internet.</span>
+    <span class="captions" data-start="17.940" data-end="22.370">If you live in a city or a town, you probably have a coaxial cable for</span>
+    <span class="captions" data-start="22.370" data-end="26.880">cable Internet, or a phone line if you have DSL, running to the outside of </span>
+    <span class="captions" data-start="26.880" data-end="30.920">your house, that connects you to the Internet Service Provider, or ISP.</span>
+    <span class="captions" data-start="32.100" data-end="34.730">If you live far out in the country, you'll more likely have</span>
+    <span class="captions" data-start="34.730" data-end="39.430">a dish outside your house, connecting you wirelessly to your closest ISP, or</span>
+    <span class="captions" data-start="39.430" data-end="41.190">you might also use the telephone system.</span>
+  </p>
+  <p>
+    <span class="captions" data-start="42.350" data-end="46.300">Whether a wire comes straight from the ISP hookup outside your house, or</span>
+    <span class="captions" data-start="46.300" data-end="49.270">it travels over radio waves from your roof,</span>
+    <span class="captions" data-start="49.270" data-end="53.760">the first stop a wire will make once inside your house, is at your modem.</span>
+    <span class="captions" data-start="53.760" data-end="57.780">A modem is what connects the internet to your network at home.</span>
+    <span class="captions" data-start="57.780" data-end="60.150">A few common residential modems are DSL or</span>
+  </p>
+</div><!-- /container -->
+<script>
+  $('video').mediaelementplayer({
+    features: ['playpause', 'current', 'progress','duration', 'volume', 'fullscreen'],
+    startLanguage: 'en',
+    stretching: 'fill'
+  });
+</script>
+<script src="js/text-highlighter.js"></script>
 </body>
 
 </html>
