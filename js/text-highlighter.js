@@ -18,7 +18,7 @@ video[1].addEventListener('timeupdate', () => {
 
 // FUNCTIONS AND LOOPS
 const currentTime = () => {
-  for (let i=0; i<=captions.length; i++) {
+  for (let i=0; i<captions.length; i++) {
     if (videoTime > captions[i].dataset.start && videoTime < captions[i].dataset.end) {
       captions[i].classList.add("highlighted");
     } else {
@@ -27,7 +27,7 @@ const currentTime = () => {
   }
 };
 
-for (let i=0; i<=captions.length; i++) {
+for (let i=0; i<captions.length; i++) {
   captions[i].addEventListener('click', () => {
     let startTime = captions[i].dataset.start;
     video[1].currentTime = startTime;
