@@ -1,56 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Treehouse Lecture #1</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="js/mediaelement-and-player.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Wheel of Success!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="overlay" class="start">
+        <h2 class="title">Wheel of Success</h2>
+        <a class="btn__reset">Start Game</a>
+      </div>
 
-  <link href="css/mediaelementplayer.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/application.css">
-</head>
+      <div id="banner" class="section">
+        <h2 class="header">Wheel of Success</h2>
+      </div>
 
-<body>
-  <div class="container__video">
-    <video class="video" controls muted>
-      <source src="video/video.mp4" type="video/mp4">
-      <source src="video/video.ogg" type="video/ogg">
-        <track label="English Captions" kind="subtitles" srclang="en" src="video/english-captions.vtt" crossorigin="" default/>
-    </video>
-  </div> <!--/.container__video-->
-  <div class="container">
-  <p>
-    <span class="captions" data-start="0.240" data-end="4.130">Now that we've looked at the architecture of the internet, let's see how you might</span>
-    <span class="captions" data-start="4.130" data-end="7.535">connect your personal devices to the internet inside your house. </span>
-    <span class="captions" data-start="7.535" data-end="11.270">Well there are many ways to connect to the internet, and </span>
-    <span class="captions" data-start="11.270" data-end="13.960">most often people connect wirelessly.</span>
-  </p>
-  <p>
-    <span class="captions" data-start="13.960" data-end="17.940">Let's look at an example of how you can connect to the internet.</span>
-    <span class="captions" data-start="17.940" data-end="22.370">If you live in a city or a town, you probably have a coaxial cable for</span>
-    <span class="captions" data-start="22.370" data-end="26.880">cable Internet, or a phone line if you have DSL, running to the outside of </span>
-    <span class="captions" data-start="26.880" data-end="30.920">your house, that connects you to the Internet Service Provider, or ISP.</span>
-    <span class="captions" data-start="32.100" data-end="34.730">If you live far out in the country, you'll more likely have</span>
-    <span class="captions" data-start="34.730" data-end="39.430">a dish outside your house, connecting you wirelessly to your closest ISP, or</span>
-    <span class="captions" data-start="39.430" data-end="41.190">you might also use the telephone system.</span>
-  </p>
-  <p>
-    <span class="captions" data-start="42.350" data-end="46.300">Whether a wire comes straight from the ISP hookup outside your house, or</span>
-    <span class="captions" data-start="46.300" data-end="49.270">it travels over radio waves from your roof,</span>
-    <span class="captions" data-start="49.270" data-end="53.760">the first stop a wire will make once inside your house, is at your modem.</span>
-    <span class="captions" data-start="53.760" data-end="57.780">A modem is what connects the internet to your network at home.</span>
-    <span class="captions" data-start="57.780" data-end="60.150">A few common residential modems are DSL or</span>
-  </p>
-</div><!-- /container -->
-<script>
-  $('video').mediaelementplayer({
-    features: ['playpause', 'current', 'progress','duration', 'volume', 'fullscreen'],
-    startLanguage: 'en',
-    stretching: 'fill'
-  });
-</script>
-<script src="js/text-highlighter.js"></script>
-</body>
+      <div id="phrase" class="section">
+        <ul></ul>
+      </div>
+      <div id="qwerty" class="section">
+        <div class="keyrow">
+          <button>q</button><button>w</button><button>e</button><button>r</button><button>t</button><button>y</button><button>u</button><button>i</button><button>o</button><button>p</button>
+        </div>
+        <div class="keyrow">
+          <button>a</button><button>s</button><button>d</button><button>f</button><button>g</button><button>h</button><button>j</button><button>k</button><button>l</button>
+        </div>
+        <div class="keyrow">
+          <button>z</button><button>x</button><button>c</button><button>v</button><button>b</button><button>n</button><button>m</button>
+        </div>
+      </div>
 
+      <div id="scoreboard" class="section">
+        <ol>
+          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
+        </ol>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
 </html>
