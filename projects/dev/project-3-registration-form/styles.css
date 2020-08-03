@@ -1,0 +1,438 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0;
+	padding-top: 73px;
+	font-family: 'Merriweather', Serif;
+	line-height: 1.6;
+	color: #000;
+	background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Top Navigation ---- */
+
+nav {
+	background-color: #2d3945;
+	position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.nav-title {
+	margin: 20px 0;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+    font-size: 1.3em;
+	letter-spacing: 2px;
+}
+
+/* ---- Headers and Titles ---- */
+
+h2 {
+	font-size: 1.25em;
+    color: #2d3945;
+}
+
+h3 {
+	font-size: 1em;
+    color: #b5b5b5;
+    font-weight: 100;
+    padding-bottom: 23px;
+    border-bottom: 5px solid #2d3945;
+    position: relative;
+    min-height: 80px;
+}
+
+h3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #2d3945;
+    height: 2px;
+    top: 81px;
+}
+
+.form-titles {
+	text-align: left;
+}
+
+.double-underline {
+    position: relative;
+}
+
+/* ---- Forms & Form Elements ---- */
+
+legend {
+    font-size: 1.25em;
+    color: #2d3945;
+    font-weight: bold;
+}
+
+label,
+.inputs {
+	display: block;
+}
+
+.newsletter-options {
+    display: block;
+}
+
+.newsletter-options * {
+    display: inline;
+}
+
+.inputs:focus {
+	border: 2px solid #46698b;
+	outline: none;
+}
+
+.labels {
+	color: rgba(45, 57, 69, 0.67);
+	padding: 10px 0;
+}
+
+.inputs {
+	background-color: #eff0f1;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 13px;
+    border: 2px solid transparent;
+}
+
+.inputs {
+    -webkit-transition: border 0.33s ease-in;
+       -moz-transition: border 0.33s ease-in;
+         -o-transition: border 0.33s ease-in;
+            transition: border 0.33s ease-in;
+}
+
+#fullname,
+#email,
+#zip {
+    -webkit-transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
+       -moz-transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
+         -o-transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
+            transition: background-color 0.33s, border 0.33s, background 0.33s ease-in;
+}
+
+#fullname:valid,
+#email:valid,
+#zip:valid {
+    background: url("checkmark-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px 8px;
+    padding-left: 40px;
+    border: 2px solid #00b51c;
+    background-color: rgba(0, 189, 152, 0.06);
+}
+
+#fullname:focus:invalid,
+#email:focus:invalid,
+#zip:focus:invalid {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.06);
+}
+
+.validation-text {
+    font-size: .9em;
+    color: rgba(255, 0, 0, 0.77);
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-in;
+    margin: 0px 0px 30px 0;
+}
+
+#zip:focus:invalid ~ .validation-text {
+    max-height: 100px;
+}
+
+input::-webkit-input-placeholder {
+  text-align: right;
+}
+
+textarea {
+	height: 125px;
+}
+
+textarea::placeholder {
+    text-align: left;
+}
+
+.sign-up-button {
+    margin: 13px 0;
+	width: 100%;
+    padding: 13px;
+    background: #4ebbb5;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.sign-up-button:hover {
+    background: #2d3945;
+}
+
+.sign-up-button {
+    -webkit-transition: background 0.25s ease-in;
+       -moz-transition: background 0.25s ease-in;
+         -o-transition: background 0.25s ease-in;
+            transition: background 0.25s ease-in;
+}
+
+.copyright {
+	text-align: center;
+    color: rgba(157, 163, 168, 0.71);
+}
+
+hr {
+    background: #2d3945;
+    height: 2px;
+    margin-bottom: 2.7em;
+}
+
+/* =================================
+  Charlie Prator's Portfolio Styles
+==================================== */
+
+/*
+**    Overlay & Modal
+*/
+
+.overlay {
+  background-color: rgba(0, 0, 0, .75);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal {
+  background-color: white;
+	padding: 2em 1.5em;
+	margin: 5%;
+	max-height: 95vh;
+  max-width: 720px;
+	box-shadow: 1px 24px 40px 4px rgba(0, 0, 0, 0.66);
+	transform: rotate(0deg);
+}
+
+@media (min-width: 768px) {
+	.modal {
+		margin: 2em auto;
+	  max-width: 720px;
+	}
+}
+
+/*
+**    Typography
+*/
+
+.modal > h1 {
+	margin: 0;
+	line-height: 1.15;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: 900;
+	letter-spacing: -0.08em;
+	text-align: left;
+	color: #0A090B;
+}
+
+.modal > h2 {
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	text-align: left;
+	color: #0A090B;
+	margin: 8px 0;
+}
+
+.modal > p,
+.modal > ul > li {
+	font-size: 14px;
+	font-family: Arial;
+	letter-spacing: -0.02em;
+	color: #0A090B;
+	line-height: 1.15;
+	margin-top: 0;
+}
+
+.modal > ul {
+	margin: 4px 0;
+}
+
+#closeIcon {
+	position: fixed;
+	right: 8px;
+  top: 8px;
+  font-weight: 900;
+}
+
+
+#closeIcon:hover {
+	-webkit-animation: jello-diagonal-1 0.5s both;
+	        animation: jello-diagonal-1 0.5s both;
+}
+
+@media (min-width: 768px) {
+	.modal > h1 {
+		font-size: 24px;
+	}
+
+	.modal > h2 {
+		font-size: 20px;
+	}
+
+	.modal > p,
+	.modal > ul > li {
+		font-size: 18px;
+	}
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-7-19 23:22:11
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-diagonal-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-diagonal-1 {
+  0% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+  30% {
+    -webkit-transform: skew(25deg 25deg);
+            transform: skew(25deg 25deg);
+  }
+  40% {
+    -webkit-transform: skew(-15deg, -15deg);
+            transform: skew(-15deg, -15deg);
+  }
+  50% {
+    -webkit-transform: skew(15deg, 15deg);
+            transform: skew(15deg, 15deg);
+  }
+  65% {
+    -webkit-transform: skew(-5deg, -5deg);
+            transform: skew(-5deg, -5deg);
+  }
+  75% {
+    -webkit-transform: skew(5deg, 5deg);
+            transform: skew(5deg, 5deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+}
+@keyframes jello-diagonal-1 {
+  0% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+  30% {
+    -webkit-transform: skew(25deg 25deg);
+            transform: skew(25deg 25deg);
+  }
+  40% {
+    -webkit-transform: skew(-15deg, -15deg);
+            transform: skew(-15deg, -15deg);
+  }
+  50% {
+    -webkit-transform: skew(15deg, 15deg);
+            transform: skew(15deg, 15deg);
+  }
+  65% {
+    -webkit-transform: skew(-5deg, -5deg);
+            transform: skew(-5deg, -5deg);
+  }
+  75% {
+    -webkit-transform: skew(5deg, 5deg);
+            transform: skew(5deg, 5deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    /* ---- General Layout Styles---- */
+
+    .container {
+        width: 60%;
+        /*margin: 0 auto;*/
+    }
+
+    /* ---- Labels & Inputs ---- */
+
+    .labels {
+        padding: 17px 0;
+        display: inline-block;
+        width: 28%;
+    }
+
+    .inputs {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .double-underline {
+        width: 100%;
+    }
+
+    .textarea-styles {
+        display: block;
+        width: 100%;
+    }
+}

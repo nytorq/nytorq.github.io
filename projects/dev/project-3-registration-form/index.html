@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Icons in this document provided by Line Icons (https://lineicons.com/icons/). Thanks Musharof, Yeasir, and Aman. -->
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Code Review Newsletter | Get the latest on how your code is doing right in your inbox</title>
+	<meta name="author" content="Charlie Prator">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="overlay">
+		<div class="modal">
+			<i class="lni lni-close" id="closeIcon"></i>
+			<h1>Treehouse Project #3 - A Newsletter Registration Form</h1>
+			<h2>Description</h2>
+			<p>This is project 3 of 12 in the Front-End Web Development TechDegree curriculum
+				where I was asked to create a form to subscribe to a coding newsletter.</p>
+			<h2>Skills</h2>
+			<ul>
+				<li>Mobile-first web development</li>
+				<li>HTML &#60;form&#62; and &#60;fieldset&#62; construction</li>
+				<li>Checking input values with Regex</li>
+				<li>Displaying inline validation to encourage correct form submissions</li>
+				<li>Branching & commits via Git and Github</li>
+			</ul>
+			<h2>Built With</h2>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Regex</li>
+			</ul>
+		</div><!-- /.modal -->
+	</div><!-- /.overlay -->
+		<nav>
+			<div class="container">
+				<p class="nav-title">The Code Review</p>
+			</div><!--/.container-->
+		</nav>
+		<div class="container">
+			<h2>Sign up for our Newsetter</h2>
+
+			<h3>Get the latest news on how your code is doing right in your inbox</h3>
+
+			<form>
+				<fieldset>
+					<legend>Contact Information</legend>
+
+					<label for="fullname" class="labels">Full Name</label>
+					<input type="text" id="fullname" name="user_fullname" placeholder="Required" class="inputs" required>
+
+					<label for="email" class="labels">Email Address</label>
+					<input type="email" id="email" name="user_email" placeholder="Required" class="inputs" required>
+
+					<label for="phone" class="labels">Phone Number</label>
+					<input type="tel" id="phone" name="user_phone" class="inputs" placeholder="Gimme dem digits."/>
+
+					<label for="address" class="labels">Street Address</label>
+					<input type="text" id="address" name="user_street_address" class="inputs"/>
+
+					<label for="city" class="labels">City</label>
+					<input type="text" id="city" name="user_city" class="inputs"/>
+
+					<label for="state" class="labels">State</label>
+					<select id="state" name="user_state" class="inputs">
+						<option value="AL" selected hidden disabled>Choose State</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+
+
+					<label for="zip" class="labels">Zip Code</label>
+					<input type="text" id="zip" name="user_zip" class="inputs" pattern="\b\d{5}\b" required/>
+					<div class="validation-text"> 5 digits &#40;no letters&#41;&#44; please.</div><!--/.validation-text-->
+				</fieldset>
+
+				<hr>
+
+				<fieldset>
+
+					<legend>Newsletter</legend>
+
+					<p>Select the newsletters you would like to receive:</p>
+
+					<div class="newsletter-options">
+						<input type="checkbox" id="htmlnews" name="user_htmlnews_selection"/>
+						<label for="htmlnews" class="labels">HTML News</label>
+					</div><!--/.newsletter-options-->
+
+					<div class="newsletter-options">
+						<input type="checkbox" id="cssnews" name="user_cssnews_selection"/>
+						<label for="cssnews" class="labels">CSS News</label>
+					</div><!--/.newsletter-options-->
+
+					<div class="newsletter-options">
+						<input type="checkbox" id="jsnews" name="user_jsnews_selection"/>
+						<label for="jsnews" class="labels">Javascript News</label>
+					</div><!--/.newsletter-options-->
+
+					<p>Newsletter Format:</p>
+
+					<div class="newsletter-options">
+						<input type="radio" id="html" name="user_newsletter_format"/>
+						<label for="html" class="labels">HTML</label>
+					</div><!--/.newsletter-options-->
+
+					<div class="newsletter-options">
+						<input type="radio" id="plaintext" name="user_newsletter_format"/>
+						<label for="plaintext" class="labels">Plain Text</label>
+					</div><!--/.newsletter-options-->
+
+					<label for="othertopics" class="labels textarea-styles">Other topics you'd like to hear about:</label>
+					<textarea class="inputs textarea-styles" id="othertopics" placeholder="Other than cats or coffee" name="user_topics"></textarea>
+
+					<button type="submit" name="user_signup" class="sign-up-button">Sign Up</button>
+				</fieldset>
+				<p class="copyright">Copyright The Code Review</p>
+			</form>
+		</div><!--/.container-->
+		<script>
+			let closeIcon = document.getElementById("closeIcon");
+			function closeModal() {
+				let modal = closeIcon.parentNode;
+	      let overlay = closeIcon.parentNode.parentNode
+				modal.style.visibility = "hidden";
+				overlay.style.visibility = "hidden";
+			}
+			closeIcon.addEventListener('click', closeModal);
+		</script>
+</body>
+</html>

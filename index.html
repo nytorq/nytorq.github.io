@@ -1,47 +1,258 @@
 <!DOCTYPE html>
+<!-- Icons in this document provided by Line Icons (https://lineicons.com/icons/). Thanks Musharof, Yeasir, and Aman. -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Wheel of Success!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="main-container">
-      <div id="overlay" class="start">
-        <h2 class="title">Wheel of Success</h2>
-        <a class="btn__reset">Start Game</a>
-      </div>
-
-      <div id="banner" class="section">
-        <h2 class="header">Wheel of Success</h2>
-      </div>
-
-      <div id="phrase" class="section">
-        <ul></ul>
-      </div>
-      <div id="qwerty" class="section">
-        <div class="keyrow">
-          <button>q</button><button>w</button><button>e</button><button>r</button><button>t</button><button>y</button><button>u</button><button>i</button><button>o</button><button>p</button>
+<head>
+  <meta charset="utf-8">
+  <title>Charlie Prator - Non-Descript Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+  <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+  <div class="hero" role="banner">
+      <div class="container">
+        <h1 class="heroTitle">Charlie Prator</h1>
+      </div><!-- /.container -->
+  </div><!-- /.hero -->
+  <nav id="topNav">
+    <i id="hamburger_menu" class="lni lni-menu"></i>
+    <i id="close_icon" class="lni lni-close"></i>
+    <a class="navLink" href="index.html">Home</a>
+    <a class="navLink" href="#stuff">Stuff</a>
+    <a class="navLink" href="#resume">Resume</a>
+    <a class="navLink" href="#contact">Contact</a>
+  </nav>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;  ">
+    <symbol id="envelope" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M3 3h18a2 2 0 012 2v14a2 2 0 01-2 2H3a2 2 0 01-2-2V5c0-1.1.9-2 2-2zm0 6.62V19h18V9.62l-9 4.5-9-4.5zm0-2.24l9 4.5 9-4.5V5H3v2.38z" clip-rule="evenodd"/>
+    </symbol>
+  </svg>
+  <main>
+    <div class="container">
+      <h2 id="stuff">Stuff</h2>
+      <h3>Design</h3>
+      <div class="grid">
+        <div class="card__frame">
+          <a href="projects/design/expensable/expensable.html" class="card">
+            <img class="portfolio__image--nsp"
+                 title="Portfolio Picture for ExpensAble Project"
+                 alt=""
+                 src="images/Submitter---Homescreen-v2.2.png"
+            />
+          </a>
+          <p class="black portfolio__title--exp">Expensable</p>
         </div>
-        <div class="keyrow">
-          <button>a</button><button>s</button><button>d</button><button>f</button><button>g</button><button>h</button><button>j</button><button>k</button><button>l</button>
-        </div>
-        <div class="keyrow">
-          <button>z</button><button>x</button><button>c</button><button>v</button><button>b</button><button>n</button><button>m</button>
-        </div>
-      </div>
+        <div class="card__frame">
+          <a href="projects/design/peppermill/peppermill.html" class="card">
+            <img class="portfolio__image--pep"
+                 title="Portfolio Picture for Peppermill Reno Project"
+                 alt=""
+                 src="images/peppermill-wireframe-in-an-iphone-1x.png"
+                 srcset="images/peppermill-wireframe-in-an-iphone-2x.png 2x,
+                         images/peppermill-wireframe-in-an-iphone-3x.png 3x"
+            />
+          </a>
+          <p class="black portfolio__title--pep">Peppermill Reno</p>
+        </div><!-- /.card__frame -->
+        <div class="card__frame">
+          <a href="projects/design/hue-pro/huepro.html" class="card">
+            <img class="portfolio__image--hue"
+                 title="Portfolio Picture for Hue Pro Project"
+                 alt=""
+                 src="images/hue-pro-presets-wireframe-in-android.png"
+            />
+          </a>
+          <p class="black portfolio__title--hue">Hue Pro</p>
+        </div><!-- /.card__frame -->
+        <div class="card__frame">
+          <a href="projects/design/tsp-vmi/tsp-vmi.html" class="card">
+            <img class="portfolio__image--tsp"
+                 title="Portfolio Picture for TSP VMI Project"
+                 alt=""
+                 src="images/tsp-vmi-wireframe-inside-an-iphone-5-1x.png"
+                 srcset="images/tsp-vmi-wireframe-inside-an-iphone-5-2x.png 2x,
+                         images/tsp-vmi-wireframe-inside-an-iphone-5-3x.png 3x"
+            />
+          </a>
+          <p class="black portfolio__title--tsp">TSP VMI</p>
+        </div><!-- /.card__frame -->
+      </div><!-- /.grid -->
+      <h3>Dev</h3>
+      <div class="grid">
+        <div class="card__frame">
+          <a href="projects/dev/project-3-registration-form/index.html" class="card">
+            <img class="portfolio__screenshot"
+                 title="Project 3 Online Registration Form"
+                 alt=""
+                 src="images/Screenshot-Project-3-Online-Registration-Form-compressed.png"
+            />
+          </a>
+          <p class="black portfolio__title--rfo">Responsive Forms</p>
+        </div><!-- /.card__frame -->
+        <div class="card__frame">
+          <a href="projects/dev/project-4-photo-gallery/index.html" class="card">
+            <img class="portfolio__screenshot"
+                 title="Project 4 Interactive Photo Gallery"
+                 alt=""
+                 src="images/Screenshot-Project-4-Interactive-Photo-Gallery-compressed.png"
+            />
+          </a>
+          <p class="black portfolio__title--ipg">Photo Gallery</p>
+        </div><!-- /.card__frame -->
+        <div class="card__frame">
+          <a href="projects/dev/project-5-web-style-guide/index.html" class="card">
+            <img class="portfolio__screenshot"
+                 title="Project 5 Build a Web Style Guide"
+                 alt=""
+                 src="images/Screenshot-Project-5-Build-a-Web-Style-Guide-compressed.png"
+            />
+          </a>
+          <p class="black portfolio__title--wsg">Style Guide</p>
+        </div><!-- /.card__frame -->
+        <div class="card__frame">
+          <a href="projects/dev/project-7-game-show-app/index.html" class="card">
+            <img class="portfolio__screenshot"
+                 title="Project 7 Build a Game Show App"
+                 alt=""
+                 src="images/Screenshot-Project-7-Build-a-Game-Show-App-compressed.png"
+            />
+          </a>
+          <p class="black portfolio__title--gsa">JS Wheel o' Fortune</p>
+        </div><!-- /.card__frame -->
+        <div class="card__frame">
+          <a href="projects/dev/project-9-app-dashboard/index.html" class="card">
+            <img class="portfolio__screenshot"
+                 title="Project 9 Web App Dashboard"
+                 alt=""
+                 src="images/Screenshot-Project-9-Web-App-Dashboard-compressed.png"
+            />
+          </a>
+          <p class="black portfolio__title--wad">App Dashboard</p>
+        </div><!-- /.card__frame -->
+      </div><!-- /.grid -->
+      <h3 id="art">Art</h3>
+      <div class="grid">
+      <div class="card__frame">
+        <a href="projects/art/sunrise/sunrise.html" class="card">
+          <img class="portfolio__screenshot"
+               title="Sunrise"
+               alt=""
+               src="projects/art/sunrise/sunrise.svg"
+          />
+        </a>
+        <p class="black portfolio__title--wad">Sunrise</p>
+      </div><!-- /.card__frame -->
+      <div class="card__frame">
+        <a href="projects/art/sunset/sunset.html" class="card">
+          <img class="portfolio__screenshot"
+               title="Sunset"
+               alt=""
+               src="projects/art/sunset/sunset.svg"
+          />
+        </a>
+        <p class="black portfolio__title--wad">Sunset</p>
+      </div><!-- /.card__frame -->
+      <div class="card__frame">
+        <a href="projects/art/pear/pear.html" class="card">
+          <img class="portfolio__screenshot"
+               title="Pear"
+               alt=""
+               src="projects/art/pear/pear.svg"
+          />
+        </a>
+        <p class="black portfolio__title--wad">Pear</p>
+      </div><!-- /.card__frame -->
+      </div><!-- /.grid -->
 
-      <div id="scoreboard" class="section">
-        <ol>
-          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
-          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
-          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
-          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
-          <li class="tries"><img src="images/liveHeart.png" height="35px" width="30px"></li>
-        </ol>
-      </div>
+      <a href="docs/Charlie-Prator-Resume.pdf" download="Charlie-Prator-Resume.pdf" target="_blank" class="resumeLink"><h2 id="resume">Resume</h2><i class="lni lni-download"></i></a>
+      <h3>Experience</h3>
+      <h4 class="company black">SpotX</h4>
+      <p class="title bold">Sr. UX/UI Designer</p>
+      <p class="period">Jan 2019 - Present</p>
+      <p class="description">Coalesced company’s core design processes. Performed extensive NN/g heuristic evaluation. Released company’s first release of app notifications. Initiated the company’s first user research regimen and extracted major benchmarks, e.g. SUPR-Q and SUS. Personally coded a HTML, Bootstrap, and SCSS site of design system standards. Distilled insights from user behavior through the wiring of click interactions through Pendo.</p>
+
+      <h4 class="company black">Bayer</h4>
+      <p class="title bold">UX/UI Designer</p>
+      <p class="period">Aug - Oct 2018</p>
+      <p class="description">Conducted field studies and established task benchmarks. Led and engaged 10-person stakeholder team through sketching and functionality definition. Iterated and delivered a high-fidelity Sketch &amp; Invision prototype covering major functionality &amp; needs. Enumerated atomic level requirements and use cases for dev teams.</p>
+
+      <h4 class="company black">Fairmount Santrol</h4>
+      <p class="title bold">Product Manager &amp; UI Designer</p>
+      <p class="period">Jun 2017 - Jan 2018</p>
+      <p class="description">Led three-day on-site workshop with executives and sales team to gather insights on current business process. Wrote basic requirements document and established product roadmap. Crafted user personas for two distinct user groups. Flowcharted major functionality and flows for campaign creation and purchase process. Conducted weekly user tests against design to correct usability issues. Delivered high-fidelity prototype for mobile, tablet, and desktop that addressed marketing campaigns and end-customer ordering process.</p>
+
+      <h4 class="company black">Sandbox Logistics</h4>
+      <p class="title bold">Product Manager &amp; UI Designer</p>
+      <p class="period">Feb 2015 - Nov 2016</p>
+      <p class="description">Conducted user interviews with truck drivers, dispatchers, and managers to map out the delivery process. Outlined truck driver user journey from loading facility to customer’s well site. Sketched low-fidelity designs of web and mobile app to vet digital flow of dispatch &amp; driver interactions. Designed a new pattern library and digital style guide for client. Created a robust high-fidelity prototype that showcased the entire business process from job creation to product delivery.</p>
+
+      <h4 class="company black">Hue Pro</h4>
+      <p class="title bold">Visual &amp; UI Designer</p>
+      <p class="period">Mar to Apr 2015</p>
+      <p class="description">Provided client with new visual &amp; UI design for the app. Designed a high-fidelity prototype for major functionality of the app. </p>
+
+      <h4 class="company black">Insperity</h4>
+      <p class="title bold">Product Manager &amp; UI Designer</p>
+      <p class="period">Feb 2015 - Sep 2016</p>
+      <p class="description">Led product overhaul of 20-year old software to bring it into the web. Curated and drove a long-term product roadmap and feature releases. Gathered and defined requirements for the build stage. Created user personas of varied end-user groups (e.g. from employees to CFOs). Provided front-end dev testing to ensure code was modern and DRY. Redesigned 80% of the app through a high-fidelity prototype of nearly 1,000 wireframes.</p>
+
+      <h3>Education</h3>
+      <h4 class="company black">Texas A&amp;M</h4>
+      <p class="title bold">BBA - Accounting</p>
+      <p class="period">Sep 2006 - May 2010</p>
+      <h4 class="company black">TeamTreehouse</h4>
+      <p class="title bold">Front-End Web Development (FEWD) TechDegree</p>
+      <p class="period">Aug 2020</p>
+    </div><!-- /.container -->
+  </main>
+  <footer>
+    <div class="footer__linkContainer">
+      <a class="footer__link" href="index.html"><i class="lni lni-home"></i>Home</a>
+      <a class="footer__link" href="#stuff"><i class="lni lni-paint-roller"></i>Stuff</a>
+      <a class="footer__link" href="#resume"><i class="lni lni-empty-file"></i>Resume</a>
+      <a class="footer__link" href="#contact"><i class="lni lni-phone"></i>Contact</a>
     </div>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+    <div class="footer__titleAndContact">
+      <h1 class="footer__title">
+        <span class="yellAtMe">Y</span><span class="yellAtMe">e</span><span class="yellAtMe">l</span><span class="yellAtMe">l</span> <span id="footer__lineBreak"></span><span class="yellAtMe">a</span><span class="yellAtMe">t</span> <span class="yellAtMe">m</span><span class="yellAtMe">e</span>
+      </h1>
+      <div id="contact" class="footer__contactContainer">
+        <a class="footer__link" href="mailto:hey@charlieprator.com"><!--<i class="lni lni-envelope"></i>--><svg width="24" height="24"><use xlink:href="#envelope" fill="#ffffff"/></svg>hey@charlieprator.com</a>
+        <a class="footer__link" href="tel:1-713-893-3533"><i class="lni lni-mobile"></i>713-893-3533</a>
+        <a class="footer__link" href="https://www.instagram.com/charlieprator/"><i class="lni lni-instagram"></i>charlieprator</a>
+        <a class="footer__link" href="https://github.com/nytorq"><i class="lni lni-github"></i>nytorq</a>
+        <a class="footer__link" href="https://www.linkedin.com/in/cprator/"><i class="lni lni-linkedin"></i>cprator</a>
+      </div><!-- /.footer__contactContainer -->
+    </div><!-- /.footer__titleAndContact -->
+  </footer>
+  <script>
+    let hamMenu = document.getElementById("hamburger_menu");
+    let closeIcon = document.getElementById("close_icon");
+    let nav = document.getElementById("topNav");
+    let navLinks = document.getElementsByClassName("navLink");
+    function openMenu() {
+      nav.style.height = "100vh";
+      hamMenu.style.visibility = "hidden";
+      console.log("The hamburger menu icon is now " + hamMenu.style.visibility);
+    }
+    function closeMenu() {
+      nav.style.height = "0";
+      hamMenu.style.visibility = "visible";
+    }
+    hamMenu.addEventListener('click', openMenu);
+    closeIcon.addEventListener('click', closeMenu);
+    let hamMenuState = hamMenu.style.visibility;
+    const yellAtMeContainer = document.getElementsByClassName("footer__title");
+    const myColors = ['#323786','#646CC4','#00ffad','#A90505','#015F85','#7ABD45','#A78154','#F86AC1','#A13427']
+    yellAtMeContainer[0].addEventListener('click', changeCharacterColor);
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max))
+    }
+    function changeCharacterColor() {
+      let character = event.target;
+      let chosenColor = getRandomInt(myColors.length);
+      character.style.color = myColors[chosenColor];
+    }
+  </script>
+</body>
 </html>
