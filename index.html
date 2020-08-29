@@ -7,11 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
   <link rel="stylesheet" href="css/application.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176310726-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-176310726-1');
+    </script>
 </head>
 <body>
   <div class="hero" role="banner">
       <div class="container">
         <h1 class="heroTitle">Charlie Prator</h1>
+        <p class="heroTag">Designer &amp; FE Dev, <span class="newWord">a Devsigner</span>.<span class="lineBreak"></span>Yes, I just made that up.<p>
       </div><!-- /.container -->
   </div><!-- /.hero -->
   <nav id="topNav">
@@ -22,148 +32,130 @@
     <a class="navLink" href="#resume">Resume</a>
     <a class="navLink" href="#contact">Contact</a>
   </nav>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;  ">
-    <symbol id="envelope" viewBox="0 0 24 24">
-      <path fill-rule="evenodd" d="M3 3h18a2 2 0 012 2v14a2 2 0 01-2 2H3a2 2 0 01-2-2V5c0-1.1.9-2 2-2zm0 6.62V19h18V9.62l-9 4.5-9-4.5zm0-2.24l9 4.5 9-4.5V5H3v2.38z" clip-rule="evenodd"/>
-    </symbol>
-  </svg>
   <main>
     <div class="container">
       <h2 id="stuff">Stuff</h2>
       <h3>Design</h3>
       <div class="grid">
-        <div class="card__frame">
-          <a href="projects/design/expensable/expensable.html" class="card">
-            <img class="portfolio__image--nsp"
-                 title="Portfolio Picture for ExpensAble Project"
-                 alt=""
-                 src="images/Submitter---Homescreen-v2.2.png"
+        <a href="projects/design/expensable/expensable.html">
+          <div class="card">
+            <img title="Portfolio Picture for ExpensAble Project"
+                 alt="An interface of a financial web app"
+                 src="images/Submitter---Homescreen-v2.2-cropped.png"
             />
-          </a>
-          <p class="black portfolio__title--exp">Expensable</p>
-        </div>
-        <div class="card__frame">
-          <a href="projects/design/peppermill/peppermill.html" class="card">
-            <img class="portfolio__image--pep"
-                 title="Portfolio Picture for Peppermill Reno Project"
-                 alt=""
-                 src="images/peppermill-wireframe-in-an-iphone-1x.png"
-                 srcset="images/peppermill-wireframe-in-an-iphone-2x.png 2x,
-                         images/peppermill-wireframe-in-an-iphone-3x.png 3x"
+            <p class="portfolioTitle">Expensable</p>
+          </div>
+        </a>
+        <a href="projects/design/peppermill/peppermill.html">
+          <div class="card">
+            <img title="Portfolio Picture for Peppermill Reno Project"
+                 alt="A mobile interface's login page"
+                 src="images/peppermill-wireframe-in-an-iphone-1x-cropped.png"
+                 srcset="images/peppermill-wireframe-in-an-iphone-2x-cropped.png 2x,
+                         images/peppermill-wireframe-in-an-iphone-3x-cropped.png 3x"
             />
-          </a>
-          <p class="black portfolio__title--pep">Peppermill Reno</p>
-        </div><!-- /.card__frame -->
-        <div class="card__frame">
-          <a href="projects/design/hue-pro/huepro.html" class="card">
-            <img class="portfolio__image--hue"
-                 title="Portfolio Picture for Hue Pro Project"
-                 alt=""
-                 src="images/hue-pro-presets-wireframe-in-android.png"
+            <p class="portfolioTitle">Peppermill Reno</p>
+          </div>
+        </a>
+        <a href="projects/design/hue-pro/huepro.html">
+          <div class="card">
+            <img title="Portfolio Picture for Hue Pro Project"
+                 alt="An Android mobile inteface displaying a list"
+                 src="images/hue-pro-presets-wireframe-in-android-cropped.png"
             />
-          </a>
-          <p class="black portfolio__title--hue">Hue Pro</p>
-        </div><!-- /.card__frame -->
-        <div class="card__frame">
-          <a href="projects/design/tsp-vmi/tsp-vmi.html" class="card">
-            <img class="portfolio__image--tsp"
-                 title="Portfolio Picture for TSP VMI Project"
-                 alt=""
-                 src="images/tsp-vmi-wireframe-inside-an-iphone-5-1x.png"
-                 srcset="images/tsp-vmi-wireframe-inside-an-iphone-5-2x.png 2x,
-                         images/tsp-vmi-wireframe-inside-an-iphone-5-3x.png 3x"
+            <p class="portfolioTitle">Hue Pro</p>
+          </div>
+        </a>
+        <a href="projects/design/tsp-vmi/tsp-vmi.html">
+          <div class="card">
+            <img title="Portfolio Picture for TSP VMI Project"
+                 alt="A mobile interface displaying an inventory table"
+                 src="images/tsp-vmi-wireframe-inside-an-iphone-5-1x-cropped.png"
+                 srcset="images/tsp-vmi-wireframe-inside-an-iphone-5-2x-cropped.png 2x,
+                         images/tsp-vmi-wireframe-inside-an-iphone-5-3x-cropped.png 3x"
             />
-          </a>
-          <p class="black portfolio__title--tsp">TSP VMI</p>
-        </div><!-- /.card__frame -->
+            <p class="portfolioTitle">TSP VMI</p>
+          </div>
+        </a>
       </div><!-- /.grid -->
       <h3>Dev</h3>
       <div class="grid">
-        <div class="card__frame">
-          <a href="projects/dev/project-3-registration-form/index.html" class="card">
-            <img class="portfolio__screenshot"
-                 title="Project 3 Online Registration Form"
-                 alt=""
+        <a href="projects/dev/project-3-registration-form/index.html">
+          <div class="card">
+            <img title="Project 3 Online Registration Form"
+                 alt="An interface of a newsletter registration from"
                  src="images/Screenshot-Project-3-Online-Registration-Form-compressed.png"
             />
-          </a>
-          <p class="black portfolio__title--rfo">Responsive Forms</p>
-        </div><!-- /.card__frame -->
-        <div class="card__frame">
-          <a href="projects/dev/project-4-photo-gallery/index.html" class="card">
-            <img class="portfolio__screenshot"
-                 title="Project 4 Interactive Photo Gallery"
-                 alt=""
+            <p class="portfolioTitle">Responsive Form</p>
+          </div>
+        </a>
+        <a href="projects/dev/project-4-photo-gallery/index.html">
+          <div class="card">
+            <img title="Project 4 Interactive Photo Gallery"
+                 alt="A photo gallery grid of images"
                  src="images/Screenshot-Project-4-Interactive-Photo-Gallery-compressed.png"
             />
-          </a>
-          <p class="black portfolio__title--ipg">Photo Gallery</p>
-        </div><!-- /.card__frame -->
-        <div class="card__frame">
-          <a href="projects/dev/project-5-web-style-guide/index.html" class="card">
-            <img class="portfolio__screenshot"
-                 title="Project 5 Build a Web Style Guide"
-                 alt=""
+            <p class="portfolioTitle">Photo Gallery</p>
+          </div>
+        </a>
+        <a href="projects/dev/project-5-web-style-guide/index.html">
+          <div class="card">
+            <img title="Project 5 Build a Web Style Guide"
+                 alt="A style guide showcasing commonplace UI components and styles"
                  src="images/Screenshot-Project-5-Build-a-Web-Style-Guide-compressed.png"
             />
-          </a>
-          <p class="black portfolio__title--wsg">Style Guide</p>
-        </div><!-- /.card__frame -->
-        <div class="card__frame">
-          <a href="projects/dev/project-7-game-show-app/index.html" class="card">
-            <img class="portfolio__screenshot"
-                 title="Project 7 Build a Game Show App"
-                 alt=""
+            <p class="portfolioTitle">Style Guide</p>
+          </div>
+        </a>
+        <a href="projects/dev/project-7-game-show-app/index.html">
+          <div class="card">
+            <img title="Project 7 Build a Game Show App"
+                 alt="An interface of a Wheel of Fortune web app"
                  src="images/Screenshot-Project-7-Build-a-Game-Show-App-compressed.png"
             />
-          </a>
-          <p class="black portfolio__title--gsa">JS Wheel o' Fortune</p>
-        </div><!-- /.card__frame -->
-        <div class="card__frame">
-          <a href="projects/dev/project-9-app-dashboard/index.html" class="card">
-            <img class="portfolio__screenshot"
-                 title="Project 9 Web App Dashboard"
-                 alt=""
+            <p class="portfolioTitle">Wheel o' Fortune</p>
+          </div>
+        </a>
+        <a href="projects/dev/project-9-app-dashboard/index.html">
+          <div class="card">
+            <img title="Project 9 Web App Dashboard"
+                 alt="A web app dashboard displaying charts"
                  src="images/Screenshot-Project-9-Web-App-Dashboard-compressed.png"
             />
-          </a>
-          <p class="black portfolio__title--wad">App Dashboard</p>
-        </div><!-- /.card__frame -->
+            <p class="portfolioTitle">App Dashboard</p>
+          </div>
+        </a>
       </div><!-- /.grid -->
       <h3 id="art">Art</h3>
       <div class="grid">
-      <div class="card__frame">
-        <a href="projects/art/sunrise/sunrise.html" class="card">
-          <img class="portfolio__screenshot"
-               title="Sunrise"
-               alt=""
-               src="projects/art/sunrise/sunrise.svg"
-          />
+        <a href="projects/art/sunrise/sunrise.html">
+          <div class="card">
+            <img title="Sunrise"
+                 alt="A vector illustration of the sun rising in a desert"
+                 src="projects/art/sunrise/sunrise.svg"
+            />
+            <p class="portfolioTitle">Sunrise</p>
+          </div>
         </a>
-        <p class="black portfolio__title--wad">Sunrise</p>
-      </div><!-- /.card__frame -->
-      <div class="card__frame">
-        <a href="projects/art/sunset/sunset.html" class="card">
-          <img class="portfolio__screenshot"
-               title="Sunset"
-               alt=""
-               src="projects/art/sunset/sunset.svg"
-          />
+        <a href="projects/art/sunset/sunset.html">
+          <div class="card">
+            <img title="Sunset"
+                 alt="A vector illustration of the sun setting in a desert"
+                 src="projects/art/sunset/sunset.svg"
+            />
+            <p class="portfolioTitle">Sunset</p>
+          </div>
         </a>
-        <p class="black portfolio__title--wad">Sunset</p>
-      </div><!-- /.card__frame -->
-      <div class="card__frame">
-        <a href="projects/art/pear/pear.html" class="card">
-          <img class="portfolio__screenshot"
-               title="Pear"
-               alt=""
-               src="projects/art/pear/pear.svg"
-          />
+        <a href="projects/art/pear/pear.html">
+          <div class="card">
+            <img title="Sunset"
+                 alt="A cross-hatched illustration of a pear"
+                 src="projects/art/pear/pear.svg"
+            />
+            <p class="portfolioTitle">Pear</p>
+          </div>
         </a>
-        <p class="black portfolio__title--wad">Pear</p>
-      </div><!-- /.card__frame -->
       </div><!-- /.grid -->
-
       <a href="docs/Charlie-Prator-Resume.pdf" download="Charlie-Prator-Resume.pdf" target="_blank" class="resumeLink"><h2 id="resume">Resume</h2><i class="lni lni-download"></i></a>
       <h3>Experience</h3>
       <h4 class="company black">SpotX</h4>
@@ -217,13 +209,14 @@
         <span class="yellAtMe">Y</span><span class="yellAtMe">e</span><span class="yellAtMe">l</span><span class="yellAtMe">l</span> <span id="footer__lineBreak"></span><span class="yellAtMe">a</span><span class="yellAtMe">t</span> <span class="yellAtMe">m</span><span class="yellAtMe">e</span>
       </h1>
       <div id="contact" class="footer__contactContainer">
-        <a class="footer__link" href="mailto:hey@charlieprator.com"><!--<i class="lni lni-envelope"></i>--><svg width="24" height="24"><use xlink:href="#envelope" fill="#ffffff"/></svg>hey@charlieprator.com</a>
+        <a class="footer__link" href="mailto:hey@charlieprator.com"><i class="lni lni-envelope"></i>hey@charlieprator.com</a>
         <a class="footer__link" href="tel:1-713-893-3533"><i class="lni lni-mobile"></i>713-893-3533</a>
         <a class="footer__link" href="https://www.instagram.com/charlieprator/"><i class="lni lni-instagram"></i>charlieprator</a>
         <a class="footer__link" href="https://github.com/nytorq"><i class="lni lni-github"></i>nytorq</a>
         <a class="footer__link" href="https://www.linkedin.com/in/cprator/"><i class="lni lni-linkedin"></i>cprator</a>
       </div><!-- /.footer__contactContainer -->
     </div><!-- /.footer__titleAndContact -->
+    <p class="copyright">&#169;2020 - Look, ma! I finally did it.</p>
   </footer>
   <script>
     let hamMenu = document.getElementById("hamburger_menu");
