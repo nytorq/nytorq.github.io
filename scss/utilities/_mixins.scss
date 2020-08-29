@@ -1,0 +1,34 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// BEM Selectors
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Media Query Mixin - v2
+@mixin mq($breakpoint) {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+}
+
+
+// Flexbox mixin
+@mixin flexbox {
+ display:-webkit-box;
+ display:-moz-box;
+ display:-ms-flexbox;
+ display:-webkit-flex;
+ display:flex;
+ @content
+}

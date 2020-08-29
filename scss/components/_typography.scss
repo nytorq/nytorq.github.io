@@ -1,0 +1,383 @@
+// ==========================================================================
+// Typographical Styles
+// ==========================================================================
+
+// Base styles for HTML5 tags
+p, ul, ol, li {
+  max-width: 740px;
+  @include mq($break-d) {
+    max-width: 1052px;
+  }
+}
+
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.08em;
+  font-weight: $font-weight--black;
+  text-align: center;
+  word-break: break-all;
+  @include mq($break-m) {
+    text-align: left;
+  }
+}
+
+h1 {
+  font-size: rem(80px);
+  @include mq($break-t) {
+    font-size: rem(192px);
+  }
+  @include mq($break-d) {
+    font-size: rem(256px);
+  }
+}
+
+h2 {
+  font-size: rem(56px);
+  @include mq($break-t) {
+    font-size: rem(64px);
+  }
+  @include mq($break-d) {
+    font-size: rem(80px);
+  }
+}
+
+h3 {
+  font-size: rem(40px);
+  @include mq($break-t) {
+    font-size: rem(44px);
+  }
+  @include mq($break-d) {
+    font-size: rem(48px);
+  }
+}
+
+h4 {
+  font-size: rem(24px);
+  @include mq($break-t) {
+    font-size: rem(30px);
+  }
+  @include mq($break-d) {
+    font-size: rem(34px);
+  }
+}
+
+p, ul, ol, a {
+  font-weight: $font-weight--regular;
+  letter-spacing: -0.02em;
+  @include mq($break-t) {
+    font-size: rem(24px);
+  }
+  @include mq($break-d) {
+    font-size: rem(30px);
+    letter-spacing: -0.03em;
+  }
+  @include mq($break-hd) {
+    font-size: rem(32px);
+  }
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  // @include mq($break-t) {
+  //   display: flex;
+  //   justify-content: flex-end;
+  // }
+}
+
+// General Type Styles
+.black {
+  font-weight: $font-weight--black;
+}
+
+.bold {
+  font-weight: $font-weight--bold;
+}
+
+
+// The following creates a line break at a specific point within a word. The "Yell at Me" HTML in the footer
+.lineBreak {
+  display: table;
+}
+
+#footer__lineBreak {
+  display: none;
+  @include mq($break-t) {
+    display: table;
+  }
+  @include mq($break-hd) {
+    display: none;
+  }
+}
+
+// Hero styles
+.heroTitle {
+  margin: 0;
+  text-align: left;
+  line-height: 1;
+  word-break: normal;
+  color: $white;
+  @include mq($break-t) {
+    font-size: 7.6rem;
+  }
+  @include mq($break-hd) {
+    font-size: 11.6rem;
+  }
+}
+
+.heroTag {
+  color: $white;
+  font-weight: $font-weight--bold;
+  background-color: $color-primary;
+  padding: 0.6rem;
+  display: inline-block;
+}
+
+.newWord {
+  color: $color-accent;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+
+
+// Anchor stylesheet
+a {
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+// Footer styles
+
+.footer {
+  @include e(title) {
+    color: $white;
+    font-size: rem(60px);
+    text-align: center;
+    margin: 4rem 0 0 0;
+    @include mq($break-t) {
+      text-align: right;
+      font-size: rem(130px);
+      line-height: 1;
+      margin: 0;
+    }
+    @include mq($break-d) {
+      font-size: rem(178px);
+    }
+  }
+  @include e(linkContainer) {
+    @include mq($break-t) {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    & a {
+      font-weight: 900;
+      font-size: rem(32px);
+      text-align: center;
+      @include mq($break-t) {
+        text-align: left;
+        padding: 0.5rem 0;
+        margin: 0;
+      }
+    }
+  }
+  @include e(linkContainer) {
+    @include mq($break-t) {
+      flex-grow: 2;
+    }
+  }
+  @include e(contactContainer) {
+    @include mq($break-t) {
+      flex-grow: 2;
+    }
+    @include mq($break-hd) {
+      display: flex;
+      justify-content: flex-end;
+    }
+    & a {
+      margin: 0;
+      padding: 0.5rem 0;
+      @include mq($break-hd) {
+        margin: 0 1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  @include e(link) {
+    color: $white;
+    font-size: rem(20px);
+    display: block;
+    margin: rem(32px) 0;
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+    @include mq($break-t) {
+      text-align: right;
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.6rem;
+  color: $white;
+  opacity: 20%;
+  margin: 1.5rem auto;
+  text-align: center;
+  width: 180px;
+  @include mq($break-t) {
+    text-align: inherit;
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+  }
+}
+
+.skip {
+  @include m(prev) {
+    @extend %skipLink;
+    text-align: left;
+  }
+  @include m(next) {
+    @extend %skipLink;
+    text-align: right;
+  }
+}
+
+
+// Portfolio Image Type styles
+.portfolio__title {
+  @include m(exp) {
+    @extend %portfolio_title;
+    bottom: 58%;
+    @include mq($break-d) {
+      bottom: 67%;
+    }
+  }
+  @include m(pep) {
+    @extend %portfolio_title;
+    bottom: 141%;
+    @include mq($break-d) {
+      bottom: 148%
+    }
+  }
+  @include m(hue) {
+    @extend %portfolio_title;
+    bottom: 113%;
+    @include mq($break-d) {
+      bottom: 119%;
+    }
+  }
+  @include m(tsp) {
+    @extend %portfolio_title;
+    bottom: 137%;
+    @include mq($break-d) {
+      bottom: 144%;
+    }
+  }
+  @include m(rfo) {
+    @extend %portfolio_title;
+    bottom: 33%;
+  }
+  @include m(ipg) {
+    @extend %portfolio_title;
+    bottom: 33%;
+  }
+  @include m(wsg) {
+    @extend %portfolio_title;
+    bottom: 33%;
+  }
+  @include m(gsa) {
+    @extend %portfolio_title;
+    bottom: 33%;
+  }
+  @include m(wad) {
+    @extend %portfolio_title;
+    bottom: 33%;
+  }
+}
+
+.portfolioTitle {
+  font-weight: $font-weight--black;
+  text-decoration: none;
+  background-color: $color-primary;
+  color: white;
+  font-size: rem(24px);
+  padding: rem(8px) rem(16px);
+  display: inline;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+}
+
+// Resume type styles
+
+.resumeLink i {
+  font-weight: 900;
+  position: relative;
+  bottom: 13px;
+}
+
+.resumeLink h2 {
+  display: inline-block;
+}
+
+.company {
+  margin-top: 0;
+  margin-bottom: rem(4px);
+  text-align: left;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+.period {
+  margin-top: 0;
+  margin-bottom: rem(16px)
+}
+
+
+// Hue Pro card and logotype stylesheet
+.huepro-card {
+  position: relative;
+  width: 100%;
+  min-height: 228px;
+  max-height: 328px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#454545), to(#2A2A2A));
+  background: linear-gradient(180deg, #454545 0%, #2A2A2A 100%);
+  margin-bottom: 1em;
+}
+
+.huepro-title {
+    position: absolute;
+    top: 8.5%;
+    width: 100%;
+    font-size: 4em;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-color: #6a0844;
+    color: transparent;
+    text-shadow: 0px 2px 1px rgba(255, 146, 213, 0.76);
+    -webkit-background-clip: text;
+}
+
+// Yell at Me JS interactions
+
+.yellAtMe {
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  transition: 0.15s;
+}

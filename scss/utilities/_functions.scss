@@ -1,0 +1,19 @@
+// ==========================================================================
+// Functions
+// ==========================================================================
+
+// PX to Em calculator
+@function em($target, $context: $base__font-size) {
+  @return ($target/$context) * 1em;
+}
+
+// PX to Rem calculator
+@function rem($target, $context: $base__font-size) {
+  @return ($target/$context) * 1rem;
+}
+
+
+// Import if Google Fonts URL is defined
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}

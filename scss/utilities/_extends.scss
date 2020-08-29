@@ -1,0 +1,45 @@
+// ==========================================================================
+// Extends or Placeholders
+// ==========================================================================
+
+// General Placeholders
+
+%centered {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+  max-width: $max-width;
+  flex-grow: inherit;
+}
+
+// UI Element Specific Placeholders
+
+%porfolio_image {
+  width: 200px;
+  position: relative;
+  bottom: -7%;
+  display: inline;
+}
+
+
+%portfolio_title {
+  color: $white;
+  background-color: $color-primary;
+  padding: 8px;
+  margin: 16px;
+  position: relative;
+  display: inline;
+  z-index: 1;
+  @include mq($break-t) {
+    font-size: 24px;
+  }
+}
+
+// Link stylization for skip previous and next buttons at bottom of project pages
+
+%skipLink {
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  display: block;
+  margin: 2rem 0;
+}

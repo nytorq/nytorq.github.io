@@ -1,0 +1,46 @@
+// ==========================================================================
+// Card Styles
+// ==========================================================================
+
+// Base card style
+.card {
+  width: 100%;
+  min-width: 200px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 8px solid black;
+  transform: rotateX(0deg);
+  &:hover {
+    border: 8px solid $color-accent;
+  }
+  &:hover .portfolioTitle {
+    background-color: $color-accent;
+    color: $color-primary;
+  }
+}
+// Focus styles on .card (but really on its parent <a>)
+.grid a:focus .card {
+  border: 8px solid $color-comp-accent;
+}
+
+.grid a:focus .card .portfolioTitle {
+  background-color: $color-comp-accent;
+  color: $white;
+}
+
+// Gradient backgrounds on all of the cards
+.grid:nth-of-type(1) a:nth-child(1) .card {
+  background: linear-gradient(139.79deg, $nsp-blue 0%, $nsp-green 100%);
+}
+
+.grid:nth-of-type(1) a:nth-child(2) .card {
+  background: linear-gradient(324.5deg, $pep-tan 0%, $pep-black 100%);
+}
+
+.grid:nth-of-type(1) a:nth-child(3) .card {
+  background: linear-gradient(227.19deg, $hue-gray 0%, $hue-dark-gray 100%);
+}
+
+.grid:nth-of-type(1) a:nth-child(4) .card {
+  background: linear-gradient(180deg, $tsp-dark-red 0%, $tsp-red 100%);
+}

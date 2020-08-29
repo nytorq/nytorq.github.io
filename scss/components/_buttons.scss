@@ -1,0 +1,22 @@
+// ==========================================================================
+// Button Styles
+// ==========================================================================
+
+button, .button--primary {
+  border-radius: 2px;
+  background-color: $color-primary;
+  color: $white;
+  margin: 1em 0;
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background-color: $color-accent;
+    color: $color-primary;
+  }
+}
+
+
+a.button--primary {
+  display: block;
+}

@@ -449,10 +449,10 @@ template {
   top: 35%; }
   @media (min-width: 768px) {
     .container:first-child {
-      top: 46%; } }
+      top: 32%; } }
   @media (min-width: 1024px) {
     .container:first-child {
-      top: 52%; } }
+      top: 46%; } }
 
 .grid {
   display: grid;
@@ -693,6 +693,12 @@ ul {
   line-height: 1;
   word-break: normal;
   color: #fff; }
+  @media (min-width: 768px) {
+    .heroTitle {
+      font-size: 7.6rem; } }
+  @media (min-width: 1440px) {
+    .heroTitle {
+      font-size: 11.6rem; } }
 
 .heroTag {
   color: #fff;
