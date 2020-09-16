@@ -665,9 +665,13 @@ p, ul, ol, a {
       font-size: 1.6rem; } }
 
 ul {
-  list-style: none;
-  text-align: center;
-  padding-left: 0; }
+  padding-left: 1rem; }
+
+li {
+  list-style-type: square;
+  margin: 0.25rem 0; }
+  li::marker {
+    color: #00ffad; }
 
 .black {
   font-weight: 800; }
