@@ -918,7 +918,7 @@ img {
   max-height: 66vh; }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(169, 5, 5, 0.76), rgba(169, 5, 5, 0.76)), linear-gradient(to right, rgba(0, 255, 173, 0.78), rgba(0, 255, 173, 0.78)), url(../images/Photo_of_Charlie_desaturated.jpg);
+  background-image: linear-gradient(to right, rgba(169, 5, 5, 0.76), rgba(169, 5, 5, 0.76)), linear-gradient(to right, rgba(0, 255, 173, 0.78), rgba(0, 255, 173, 0.78)), url(../images/charlie-prator-hero-pic-1x.png);
   background-blend-mode: lighten, darken, normal;
   background-position: top;
   background-size: cover;
