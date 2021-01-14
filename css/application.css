@@ -428,7 +428,7 @@ template {
   display: none; }
 
 * {
-  font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+  font-family: Arial, "Arial Black", "Arial Bold", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
