@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Charlie's Portfolio - Wheel o' Fortune!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176310726-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176310726-1');
+      </script>
+  </head>
+  <body>
+    <div class="overlay">
+  		<div class="modal">
+  			<i class="lni lni-close" id="closeIcon"></i>
+        <h1>Treehouse Project #7 - JS Wheel of Fortune</h1>
+  			<h2>Description</h2>
+  			<p>In project 7 of 12 of the Treehouse Front-End Web Development we take a deeper dive into understanding Javascript more by recreating Wheel of Fortune in the browser.</p>
+  			<h2>Skills</h2>
+  			<ul>
+  				<li>Basic JS data types, e.g. strings, booleans, numbers, etc.</li>
+  				<li>How to create JS functions, loops, and conditional statements</li>
+  				<li>Global versus local scope</li>
+  				<li>Attaching event listeners to DOM nodes</li>
+          <li>Troubleshooting in the DOM</li>
+  			</ul>
+  			<h2>Built With</h2>
+  			<ul>
+          <li>Javascript</li>
+  				<li>HTML</li>
+  				<li>CSS</li>
+  			</ul>
+  		</div><!-- /.modal -->
+  	</div><!-- /.overlay -->
+    <div class="main-container">
+      <div id="overlay" class="start">
+        <h2 class="title">Wheel of Success</h2>
+        <a class="btn__reset">Start Game</a>
+      </div>
+
+      <div id="banner" class="section">
+        <h2 class="header">Wheel of Success</h2>
+      </div>
+
+      <div id="phrase" class="section">
+        <ul id="phraseBanner"></ul>
+      </div>
+      <div id="qwerty" class="section">
+        <div class="keyrow">
+          <button>q</button><button>w</button><button>e</button><button>r</button><button>t</button><button>y</button><button>u</button><button>i</button><button>o</button><button>p</button>
+        </div>
+        <div class="keyrow">
+          <button>a</button><button>s</button><button>d</button><button>f</button><button>g</button><button>h</button><button>j</button><button>k</button><button>l</button>
+        </div>
+        <div class="keyrow">
+          <button>z</button><button>x</button><button>c</button><button>v</button><button>b</button><button>n</button><button>m</button>
+        </div>
+      </div>
+
+      <div id="scoreboard" class="section">
+        <ol>
+          <li class="tries"><img src="images/liveHeart.png" height="35" width="30" alt="Heart representing amount of lives"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35" width="30" alt="Heart representing amount of lives"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35" width="30" alt="Heart representing amount of lives"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35" width="30" alt="Heart representing amount of lives"></li>
+          <li class="tries"><img src="images/liveHeart.png" height="35" width="30" alt="Heart representing amount of lives"></li>
+        </ol>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+			let closeIcon = document.getElementById("closeIcon");
+			function closeModal() {
+				let modal = closeIcon.parentNode;
+				let overlay = modal.parentNode
+				modal.style.visibility = "hidden";
+				overlay.style.visibility = "hidden";
+			}
+			closeIcon.addEventListener('click', closeModal);
+		</script>
+  </body>
+</html>

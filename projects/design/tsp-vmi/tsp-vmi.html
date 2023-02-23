@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Icons in this document provided by Line Icons (https://lineicons.com/icons/). Thanks Musharof, Yeasir, and Aman. -->
+<html lang="en">
+  <head>
+    <title>Charlie's Portfolio - TSP VMI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../css/application.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176310726-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176310726-1');
+      </script>
+  </head>
+  <body>
+    <nav id="topNav">
+      <i id="hamburger_menu" class="lni lni-menu"></i>
+      <i id="close_icon" class="lni lni-close"></i>
+      <a class="navLink" href="../../../index.html">Home</a>
+      <a class="navLink" href="../../../index.html#stuff">Stuff</a>
+      <a class="navLink" href="../../../index.html#resume">Resume</a>
+      <a class="navLink" href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <h1 class="project-title">TSP VMI</h1>
+        <p class="project-services">UI Design</p>
+        <h3 class="section-titles">Overview</h3>
+          <p>Texas Screw Products, officially known as TSP, is a supply chain partner that sells industrial fasteners to oil&amp;gas, manufacturing, and construction businesses.  One of the more important services they provide their customers is VMI (vendor-managed inventory). We helped TSP deliver a web application specifically designed for TSP's customers. The final capstone to this web app was a responsive web application that allowed those customers to access on-site TSP part information whenever, whereever, and with whatever device they had on hand.</p>
+        <h3 class="section-titles">Problem</h3>
+          <p>The biggest obstacle to all of this was designing a way in which warehouse employees could quickly find exact parts within thousands of attributes and records.</p>
+          <img class="img__fullwidth--center-bot"
+               title=""
+               alt=""
+               src="images/hand-holding-a-samsung-galaxy-s6-with-tsp-vmi-table-displayed-square-v1-1x.png"
+          />
+          <p>In our initial research, we talked with discussed with our stakeholder team to find out what happens today during the part-finding process. We found numerous ways we could make the employee's lives and jobs easier. We found out that 80% of our end-users spent a majority of their day in the warehouse, and 20% worked in an office. Mobility was a very important priority. Currently, warehouse workers were stuck in close proximity to their "kiosks" to find part info on computers from the early. Then, they would scramble around the warehouse collecting and assemblying parts. What happened if you forgot a bin number? Back to the kiosk you go.</p>
+          <img class="img__fullwidth--center-bot"
+               title=""
+               alt=""
+               src="images/tsp-vmi-table-showcased-on-laptop-tablet-and-mobile-device-square-1x.png"
+          />
+          <p>Naturally, an application that could be reached by any mobile device became the best solution. So, we had to build an app experience that retained most of its functionality across all device sizes. Users needed the functionality they were accustomed to on their kiosks. Users needed to be able to search by product name, sort data, switch between various VMI locations, and they needed ways to quickly identify which parts are at low-inventory or which ones are being bought the most. And, all of this needed to be done while picking parts inside a warehouse.</p>
+          <img class="img__fullwidth"
+               title=""
+               alt=""
+               src="images/vmi-table-on-laptop-and-mobile-2x.png"
+          />
+          <p>At this stage of the project, we had already designed an entire pattern library. Our real focus was about creating a design pattern for table data that not only showcased many attributes, but did so in a highly-legible, highly-usable way.</p>
+          <img class="img__fullwidth--center-top"
+               title=""
+               alt=""
+               src="/tsp-vmi-ui-elements-1x.png"
+          />
+        <h3 class="section-titles">Conclusion</h3>
+        <p>We delivered high-fidelity designs of the VMI functionality, and the entire web application was delivered mid-2015. It serves thousands of part records to some of the largest oil&amp;gas companies in the United States.</p>
+        <a href="../hue-pro/huepro.html" class="skip--prev"><i class="lni lni-arrow-left"></i>Previous Project: Hue Pro</a>
+        <a href="../boost/boost.html" class="skip--next">Next Project: Boost<i class="lni lni-arrow-right"></i></a>
+      </div><!--/.container-->
+      <footer>
+        <div class="footer__linkContainer">
+          <a class="footer__link" href="../../../index.html"><i class="lni lni-home"></i>Home</a>
+          <a class="footer__link" href="../../../index.html#stuff"><i class="lni lni-paint-roller"></i>Stuff</a>
+          <a class="footer__link" href="../../../index.html#resume"><i class="lni lni-empty-file"></i>Resume</a>
+          <a class="footer__link" href="#contact"><i class="lni lni-phone"></i>Contact</a>
+        </div>
+        <div class="footer__titleAndContact">
+          <h1 class="footer__title">Yell <span id="footer__lineBreak"></span>at me</h1>
+          <div id="contact" class="footer__contactContainer">
+            <a class="footer__link" href="mailto:hey@charlieprator.com"><i class="lni lni-envelope"></i>hey@charlieprator.com</a>
+            <a class="footer__link" href="tel:1-713-893-3533"><i class="lni lni-mobile"></i>713-893-3533</a>
+            <a class="footer__link" href="https://www.instagram.com/charlieprator/"><i class="lni lni-instagram"></i>charlieprator</a>
+            <a class="footer__link" href="https://github.com/nytorq"><i class="lni lni-github"></i>nytorq</a>
+            <a class="footer__link" href="https://www.linkedin.com/in/cprator/"><i class="lni lni-linkedin"></i>cprator</a>
+          </div><!-- /.footer__contactContainer -->
+        </div><!-- /.footer__titleAndContact -->
+      </footer>
+      <script>
+        let hamMenu = document.getElementById("hamburger_menu");
+        let closeIcon = document.getElementById("close_icon");
+        let nav = document.getElementById("topNav");
+        let navLinks = document.getElementsByClassName("navLink");
+        function openMenu() {
+          nav.style.height = "100vh";
+          hamMenu.style.visibility = "hidden";
+        }
+        function closeMenu() {
+          nav.style.height = "0";
+          hamMenu.style.visibility = "visible";
+        }
+        hamMenu.addEventListener('click', openMenu);
+        closeIcon.addEventListener('click', closeMenu);
+        // for (let i = 0 ; i < navLinks.length ; i++) {
+        //   navLinks[i].addEventListener('click', closeMenu);
+        // }
+      </script>
+  </body>
+</html>
